@@ -5,7 +5,6 @@
 set -e
 
 # Variables (replace with your values)
-SUBSCRIPTION_ID="96dd7bbb-5319-4ad7-93a1-ff1de8e90a9b"
 RESOURCE_GROUP="keyvaultproject"
 LOCATION="canadacentral"
 KEY_VAULT_NAME="Vault-test-ca-cen"
@@ -15,8 +14,7 @@ DATABASE_NAME="testDB"
 SQL_ADMIN_USER="myUser" # Replace with actual SQL admin user
 SQL_ADMIN_PASSWORD="SecurePass123!" # Replace with a strong password (8+ chars, mixed case, numbers, symbols)
 
-# Basic check for Azure CLI login
-az account show >/dev/null 2>&1 || { echo "Error: Run 'az login' first."; exit 1; }
+
 
 # Create Resource Group
 echo "Creating resource group..."
